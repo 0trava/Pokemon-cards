@@ -15,6 +15,7 @@ function onSearch(e) {
 
     const form = e.currentTarget;
     const searchQuery = document.getElementById('search-box').value;
+    // const searchQuery = 148;
 
     fetchPocemon(searchQuery)
     .then(renderPokemonCard)
@@ -35,6 +36,7 @@ function onFetchError (error){
 
 // ----------------------------------------------- 
 // Звертаємось на сервер для завантаження данних карточки покемона
+
 function fetchPocemon(pokemonId){
     return fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`).then(response => {
         return response.json();
@@ -50,14 +52,15 @@ function fetchPocemon(pokemonId){
         const markup = `<div class="slide-container">
                 <div class="wrapper">
                     <div class="clash-card__image">
-                    <img class="clash-card__img" src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
+                    <img class="clash-card__img" src="${pokemon.sprites.other.dream_world.front_default}" alt="${pokemon.name}" widht="150px">
                     </div>
                 </div>
                     <div class="clash-card">
-                    <h2 class="card-title">Ім'я</h2>
-                    <span  class="clash-card__unit-name">${pokemon.name}</span>
-                    <p class="card-text">Вага: ${pokemon.weight}</p>
-                    <p class="card-text">Зріст: ${pokemon.height}</p>
+                    <h2  class="clash-card__unit-name">${pokemon.name}</h2>
+                    <div class="box-card-text">
+                        <p class="card-text">Вага: ${pokemon.weight}</p>
+                        <p class="card-text">Зріст: ${pokemon.height}</p>
+                    </div>
                     <p class="card-text"><b>Вміння:</b></p>     
                             <ul class="list-group">
                                 <li class="list-group-item">${pokemon.abilities[0].ability.name}</li>
