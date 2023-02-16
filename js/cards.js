@@ -13,8 +13,6 @@ refs.searchForm.addEventListener('click', onSearch);
 function onSearch(e) {
     e.preventDefault();
 
-    const form = e.currentTarget;
-    // const searchQuery = document.getElementById('search-box').value;
     const searchQuery = generateID();
 
     fetchPocemon(searchQuery)
@@ -24,18 +22,16 @@ function onSearch(e) {
 
 
 // ----------------------------------------------- 
-// Функція на catch помилку 
+// Функція на catch помилку, генеруємо інше зображення
 
 function onFetchError (error){
     generateID();
 };
 
-
+// Функція генерації id картки
 function generateID() {
     return Math.floor(Math.random() * 150) + 1;
 }
-
-
 
 
 // ----------------------------------------------- 

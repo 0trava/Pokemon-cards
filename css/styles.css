@@ -30,7 +30,7 @@
 
 body {
   background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg') no-repeat center center fixed;
+  background: url(../images/coc-background.jpg) no-repeat center center fixed;
   background-size: cover;
   font: 14px/20px "Lato", Arial, sans-serif;
   margin-top: 30px;
@@ -95,7 +95,7 @@ body {
 }
 
 .clash-card__image {
-  background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/thumbs/1613159686_14-p-zheltii-fon-pop-art-16.png);
+  background: url(../images/card-fon.jpg);
   background-size: cover;
   position: relative;
   
@@ -108,8 +108,6 @@ body {
   padding-bottom: 0;
   overflow: hidden;
   display: block;
-
-
 }
 
 .clash-card__image::before{
@@ -122,8 +120,6 @@ body {
     position: absolute;
     top: -150px;
     left: -0px;
-
-
 
 }
 
@@ -141,9 +137,8 @@ body {
 
   }
 
-  .clash-card__image > img:hover, .clash-card__image > img:focus{
-    width: 230px;
-
+  .clash-card__img:hover, .clash-card__img:focus {
+    width: 260px;
   }
 
 
