@@ -2,11 +2,11 @@
 
 const refs = {
     cardContainer: document.querySelector('.js-card-container'),
-    searchForm: document.querySelector('.form-inline'),
+    searchForm: document.querySelector('[btn-primare]'),
 };
 
 console.log(refs.searchForm);
-refs.searchForm.addEventListener('submit', onSearch);
+refs.searchForm.addEventListener('click', onSearch);
 
 
 
