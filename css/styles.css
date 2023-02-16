@@ -26,6 +26,12 @@
     border: none;
   }
 
+  .form-inline{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
   /* ---------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
   
