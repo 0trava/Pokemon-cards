@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa;
+    color: #212121;
+    line-height: 1.5;
+  }
+  
+  #search-box {
+    font: inherit;
+    padding: 8px;
+    max-width: 320px;
+    margin-bottom: 16px;
+  }
+
+  .page-btn{
+    width: 80px;
+    height: 40px;
+    background-color: #f1860b;
+    border: none;
+  }
+
+  /* ---------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+  
+/* $border-radius-size: 14px;
+$barbarian: #EC9B3B;
+$archer: #EE5487;
+$giant: #F6901A;
+$goblin: #82BB30;
+$wizard: #4FACFF; */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  color: #9E9E9E;
+  margin-top: 30px;
+}
+
+.slide-container {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+
+.wrapper {
+  padding-top: 40px;
+  /* padding-bottom: 40px; */
+  
+
+}
+
+.wrapper:focus {
+    outline: 0;
+  }
+
+
+
+.clash-card {
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 14px + 5;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.clash-card__image {
+  background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/thumbs/1613159686_14-p-zheltii-fon-pop-art-16.png);
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  height: 230px;
+  margin-bottom: px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.clash-card__image::before{
+    content: '';
+    width: 300px;
+    height: 300px;
+    background-color: #ffffffc9;
+
+    border-radius: 45%;
+    position: absolute;
+    top: -150px;
+    left: -0px;
+
+
+
+}
+
+
+.clash-card__image > img {
+    width: 200px;
+
+    position: absolute;
+    left: 50px;
+    top: 40px;    
+
+  }
+
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: #f1860b;
+}
+
+
+
+
+.clash-card__unit-name {
+  text-transform: uppercase;
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.clash-card__unit-description {
+  padding: 20px;
+  margin-bottom: 10px;  
+}
+
+
+.card-text{
+    font-size: 18px;
+}
+
+.list-group{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 3px;
+    color: #f1860b;
+    text-align: center;
+    padding-left: 0px;
+    margin-bottom: 50px;
+ 
+}
+
+.list-group li{
+ margin-bottom: 10px;
+ 
+}
