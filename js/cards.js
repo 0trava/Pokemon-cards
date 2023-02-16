@@ -16,12 +16,10 @@ function onSearch(e) {
     const form = e.currentTarget;
     // const searchQuery = document.getElementById('search-box').value;
     const searchQuery = generateID();
-    console.log(searchQuery)
 
     fetchPocemon(searchQuery)
     .then(renderPokemonCard)
     .catch(onFetchError)
-    .finally(()=> form.reset());// очитска input
 }
 
 
@@ -74,7 +72,7 @@ function fetchPocemon(pokemonId){
                             </ul>
                 </div>
             </div>`;
-        console.log(markup);
+
         refs.cardContainer.innerHTML = markup;
     };
 
