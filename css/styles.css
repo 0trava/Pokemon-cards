@@ -20,11 +20,27 @@
   }
 
   .page-btn{
-    width: 80px;
-    height: 40px;
-    background-color: #f1860b;
+    width: 150px;
+    height: 18px;
+    display: inline-block;
+    background: rgb(235, 101, 12);
     border: none;
+    height: 3em;
+    width: 11.5em;
+    border-radius: 25px;
+    color: #fff;
+    line-height: 55px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    transition: all 0.5s;
   }
+  
+  .page-btn:hover, .page-btn:focus {
+    background: linear-gradient(62.93deg, #ff7300 19.68%, #faf600 89.55%);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    /* border: 1px solid #f1860b; */
+  }
+
 
   .form-inline{
     display: flex;
@@ -34,13 +50,8 @@
 
   /* ---------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
-  
-/* $border-radius-size: 14px;
-$barbarian: #EC9B3B;
-$archer: #EE5487;
-$giant: #F6901A;
-$goblin: #82BB30;
-$wizard: #4FACFF; */
+
+
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -93,13 +104,14 @@ body {
   
   margin: 0 auto;
   width: 300px;
-  height: 300px;
+  height: 320px;
   /* margin-bottom: px; */
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
   padding-bottom: 0;
   overflow: hidden;
   display: block;
+
 
 }
 
@@ -121,23 +133,20 @@ body {
 
 .clash-card__image > img {
   position: relative;
-  display: block;
-  width: 200px;
+
+  /* justify-content: center; */
+  width: 220px;
   max-height: 280px;
-  margin: 20px auto;
+  margin: auto;
+  margin-top: 50%;
 
-
-
-    /* position: absolute; */
-
-
-    
-    transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform:  translate(0%, -50%) scaleY(1);
 
   }
 
   .clash-card__image > img:hover, .clash-card__image > img:focus{
-    width: 280px;
+    width: 230px;
+
   }
 
 
@@ -152,8 +161,12 @@ body {
 
 .box-card-text{
   display: flex;
-  gap: 30px;
+  gap: 80px;
   justify-content: center;
+}
+
+.box-card-text span{
+  color: #f1860b;
 }
 
 .clash-card__unit-name {
@@ -171,23 +184,37 @@ body {
 
 
 .card-text{
+  text-transform: uppercase;
     font-size: 18px;
+    color: black;
 }
 
 .list-group{
     list-style: none;
     text-transform: uppercase;
     display: flex;
-    gap: 60px;
+    gap: 30px;
     justify-content: center;
     padding-left: 0;
 
 }
 
-.list-group > li{
+.list-group-item{
   background-color: #ffb004;
-  padding: 10px;
+  max-width: 200px;
+  height: 30px;
+  padding: 5px;
+  margin-bottom: 30px;
   border-radius: 15px;
+  font-weight: 600;
   color: #fafafa;
  
 }
+
+.list-group-item:hover, .list-group-item:focus{
+  background: linear-gradient(62.93deg, #ff7300 19.68%, #faf600 89.55%);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  /* border: 1px solid #f1860b; */
+}
+
+
